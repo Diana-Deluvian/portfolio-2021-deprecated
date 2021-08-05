@@ -1,5 +1,47 @@
-#name {
-    color: blue;
+:root {
+    --transblue: #55CDFC;
+    --transpink: #F7A8B8;
+    --white: #ffffff;
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--transpink) ;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#intro {
+
+}
+
+h1 {
+    margin: 0;
+    font-size: 10vw;
+    color: var(--transblue);
+}
+
+#pfp {
+    width: 20vw;
+    height: auto;
+    border-radius: 25%;
 }
 #about{}
 #projects{}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 5px;
+}
