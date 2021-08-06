@@ -10,6 +10,15 @@ body {
     padding: 0;
     text-align: center;
     background-color: var(--transpink) ;
+    font-family: "Teko";
+    font-weight: 300;
+    font-size: 1.5vw;
+
+}
+
+#box {
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -19,7 +28,13 @@ body {
 }
 
 
+
 #intro {
+font-family: "Permanent Marker";
+}
+
+#about {
+    max-width: 50%;
 
 }
 
@@ -32,9 +47,9 @@ h1 {
 #pfp {
     width: 20vw;
     height: auto;
-    border-radius: 25%;
+    border-radius: 5% 50% 5%;
 }
-#about{}
+
 #projects{}
 
 .project {
@@ -44,4 +59,22 @@ h1 {
     border: 1px solid black;
     border-radius: 5%;
     padding: 5px;
+    max-width: 25%;
+
+}
+
+#other {
+    max-width: 50%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    width: 50%;
+    background-color: var(--transblue);
+}
+footer .container {
+    justify-content: space-evenly;
+    padding: 10px;
 }
