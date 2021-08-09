@@ -40,42 +40,42 @@ body {
 
 
 #intro {
-font-family: "Permanent Marker";
-flex-direction: column;
-justify-content: center;
+    font-family: "Permanent Marker";
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 .drop {
-    position: relative;
-    width: 5vw;
-    height: 5vw;
-    left: 50vw;
-    border-radius: 5vw ;
-    border-left: 10%;
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    left: 19.2vw;
+    top: 10vw;
+    z-index: 1;
+    border-radius: 1vw;
     background-color: var(--cloud);
     align-self: center;
-    animation: drip 4s infinite linear, fade 4s infinite ease-in;
-
-    
+    animation: drip 4s infinite cubic-bezier(1,0,.91,.19), fade 4s infinite cubic-bezier(1,0,.91,.19);
 }
 .drop:before {
     content: '';
     position: relative;
     width:0;
     height:0;
-    border-left: 2.5vw solid transparent;
-    border-right: 2.5vw solid transparent;
-    border-bottom: 7.5vw solid var(--cloud);
-    top: -7.5vw;
+    border-left: 0.55vw solid transparent;
+    border-right: 0.55vw solid transparent;
+    border-bottom: 1.5vw solid var(--cloud);
+    top: -3.2vw;
 
 }
 
 @keyframes drip {
     from {
-        top: 0px;
+        top: 10vw;
     }
       to {
-        top: 500px;
+        top: 30vw;
       }
 }
 
