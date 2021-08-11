@@ -41,6 +41,7 @@ body {
 
 #intro {
     font-family: "Permanent Marker";
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -56,7 +57,7 @@ body {
     border-radius: 1vw;
     background-color: var(--cloud);
     align-self: center;
-    animation: drip 4s infinite cubic-bezier(1,0,.91,.19), fade 4s infinite cubic-bezier(1,0,.91,.19);
+    animation: drip 4s 1 cubic-bezier(1,0,.91,.19), fade 4s 1 cubic-bezier(1,0,.91,.19);
 }
 .drop:before {
     content: '';
@@ -87,6 +88,11 @@ body {
     to {
         opacity: 0;
     }
+}
+
+.ocean {
+    height: 30vw;
+    width: 100%;
 }
 
 h1 {
