@@ -23,7 +23,7 @@ body {
     font-weight: 300;
     font-size: 1.5vw;
     color: var(--razzmic-berry);
-    background-image: linear-gradient(to bottom, var(--storm), var(--cloud));
+    
 
 
 }
@@ -47,9 +47,11 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    
-    
+    background-image: linear-gradient(to bottom, var(--storm)20%, var(--cloud));
+    overflow: hidden;
 }
+
+
 
 .drop {
     position: absolute;
@@ -95,7 +97,7 @@ body {
 }
 
 .ocean {
-    height: 30vw;
+    height: 15vw;
     width: 100%;
 }
 
@@ -103,7 +105,32 @@ h1 {
     margin: 0;
     font-size: 10vw;
     color: var(--cloud);
+    text-shadow: 0px 5px 2px #191f24;
+
 }
+
+.Wave {
+    width: 200%;
+    animation-name: swell;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    fill: var(--rich-black-fogra-29);
+  }
+  
+  @keyframes swell {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+  }
+}
+  
+
+
+
 #about {
     border: 5px solid black;
     border-radius: 20%;
