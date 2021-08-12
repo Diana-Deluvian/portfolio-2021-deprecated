@@ -23,6 +23,8 @@ body {
     font-weight: 300;
     font-size: 1.5vw;
     color: var(--razzmic-berry);
+    background-image: linear-gradient(to bottom, var(--storm), var(--cloud));
+
 
 }
 
@@ -45,6 +47,8 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    
+    
 }
 
 .drop {
@@ -100,17 +104,33 @@ h1 {
     font-size: 10vw;
     color: var(--cloud);
 }
+#about {
+    border: 5px solid black;
+    border-radius: 20%;
+    max-width: 50%;
+    background-color: rgba(0,0,0, 1);
+    display: flex;
+    flex-direction: column;
+}
 
 #pfp {
-    width: 20vw;
-    height: auto;
-    border-radius: 5% 50% 5%;
+    height: 30vh;
+    border-radius: 50% 5% 50% 5%;
+    
 }
 
-#about {
-    max-width: 50%;
-
+.bulletPoints{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
 }
+
+.quickfacts{
+    width: 33%;
+}
+
 
 
 
