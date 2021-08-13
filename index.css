@@ -7,9 +7,11 @@
     --storm: #191f24;
     --razzmic-berry: #88527fff;
     --rich-black-fogra-29: #031927ff;
+    --middle: rgb(2, 13, 20);
     --ocean-green: #43c59eff;
     --isabelline: #f4ededff;
     --myrtle-green: #3d7068ff;
+    --myrtle-green2: rgb(40, 88, 81);
 
   }
 
@@ -18,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: var(--storm) ;
+    background-color: var(--rich-black-fogra-29) ;
     font-family: "Teko";
     font-weight: 300;
     font-size: 1.5vw;
@@ -106,11 +108,11 @@ h1 {
     font-size: 10vw;
     color: var(--cloud);
     text-shadow: 0px 5px 2px #191f24;
-
 }
 
-.Wave {
+.wave {
     width: 200%;
+    margin-bottom: -10px;
     animation-name: swell;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -138,6 +140,12 @@ h1 {
     background-color: rgba(0,0,0, 1);
     display: flex;
     flex-direction: column;
+    padding: 3vh;
+    padding-top: 0;
+}
+
+#about > h2 {
+    text-shadow: 0px 2px 0px var(--razzmic-berry);
 }
 
 #pfp {
@@ -154,39 +162,80 @@ h1 {
     justify-content: space-evenly;
 }
 
-.quickfacts{
+.quickFacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 33%;
+    height: 50%;
 }
 
+#projects{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 3vh;
+    padding-bottom: 5vh;
+    border-radius: 10%;
+    border: 5px solid var(--cloud);
+    
 
+}
 
-
-#projects{}
+#projects > h2 {
+    width: 100%;
+    margin-top: 0px;
+    color: var(--myrtle-green);
+    text-shadow: 3px 3px 2px black;
+}
 
 .project {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px solid var(--snow);
-    border-radius: 5%;
+    border: 3px solid var(--snow);
+    border-radius: 10%;
     padding: 5px;
-    max-width: 25%;
+    max-width: 40%;
+    color: var(--myrtle-green);
+}
 
+.project > h4 {
+    text-shadow: 2px 2px 2px black;
+}
+.projectDescription {
+    padding: 5px;
+    padding-left: 15px;;
 }
 
 #other {
-    max-width: 50%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 3px solid var(--cloud);
+    border-radius: 10%;
+    padding: 5px;
+    max-width: 40%;
+    color: var(--myrtle-green)
 }
-a {
-    text-decoration: none;
-    color: inherit;
-}
+
+
+
 footer {
+    margin-top: 10vh;
     width: 50%;
-    background-color: var(--isabelline);
+    background-color: var(--cloud);
     color: var(--rich-black-fogra-29)
 }
 footer .container {
     justify-content: space-evenly;
     padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
