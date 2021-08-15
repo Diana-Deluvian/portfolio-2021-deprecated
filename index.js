@@ -11,12 +11,11 @@ function addNewDrop(){
    const newDrop = document.createElement("div");
    newDrop.classList.add("drop");
    newDrop.style.left = (dripLocations[randomDropLocation()] -0.5) + "vw";
-   console.log(newDrop);
-   console.log(dripLocations[randomDropLocation()] + "vw");
+   // adjust the location by half the width of the drop to center it
    document.body.appendChild(newDrop);
    setTimeout(() =>  {
       newDrop.remove();
-      addNewDrop()}, Math.floor(Math.random()*6000 + 4000));
+      addNewDrop()}, Math.floor(Math.random()*1000 + 4000));
       // 4000 is the duration of the animation
 }
 

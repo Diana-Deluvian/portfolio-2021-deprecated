@@ -11,7 +11,6 @@
     --ocean-green: #43c59eff;
     --isabelline: #f4ededff;
     --myrtle-green: #3d7068ff;
-    --myrtle-green2: rgb(40, 88, 81);
 
   }
 
@@ -20,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: var(--rich-black-fogra-29) ;
+    background-image: linear-gradient(5deg, var(--myrtle-green), var(--rich-black-fogra-29)60% 100%);
     font-family: "Teko";
     font-weight: 300;
     font-size: 1.5vw;
@@ -49,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background-image: linear-gradient(to bottom, var(--storm)20%, var(--cloud));
+    background-image: linear-gradient(to bottom right, var(--storm)15%, var(--cloud));
     overflow: hidden;
 }
 
@@ -167,7 +166,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     width: 33%;
-    height: 50%;
 }
 
 #projects{
